@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Explain | Mobile Dino Hack</title>
+    <style>
+        :root { --yt-red: #ff0000; --bg: #0f0f0f; --card: #1a1a1a; --text: #ffffff; }
+        body { font-family: -apple-system, sans-serif; margin: 0; background: var(--bg); color: var(--text); padding-bottom: 50px; }
+        
+        /* Header & Brand */
+        header { padding: 50px 20px; text-align: center; border-bottom: 1px solid #333; }
+        .brand-area { display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        h1 { font-size: 1.8rem; margin: 0; text-transform: uppercase; }
+        
+        .btn-subscribe { 
+            background: var(--yt-red); color: white; padding: 10px 20px; 
+            text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 13px;
+        }
+
+        .container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
+        
+        /* Instruction Styling */
+        .instruction-step { 
+            background: var(--card); border-radius: 12px; padding: 20px; 
+            margin-bottom: 25px; border: 1px solid #333; 
+        }
+        .step-badge { 
+            background: var(--yt-red); color: white; padding: 4px 12px; 
+            border-radius: 4px; font-size: 12px; font-weight: bold; 
+        }
+        h3 { margin: 15px 0 10px 0; font-size: 1.2rem; }
+        p { color: #ccc; font-size: 14px; margin-bottom: 15px; }
+
+        /* Code Box */
+        .code-container { position: relative; background: #000; border-radius: 8px; padding: 15px; margin: 10px 0; }
+        code { color: #00ff41; font-family: monospace; word-break: break-all; font-size: 13px; }
+        
+        .copy-btn {
+            display: block; width: 100%; background: #333; color: white; border: none;
+            padding: 10px; margin-top: 10px; border-radius: 6px; cursor: pointer; font-weight: bold;
+        }
+        .copy-btn:active { background: #555; }
+
+        .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; margin: 20px 0; }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-area">
+            <h1>Advance Explain</h1>
+            <a href="https://youtube.com/@advanceexplain1245?sub_confirmation=1" class="btn-subscribe" target="_blank">SUBSCRIBE</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="instruction-step">
+            <span class="step-badge">WATCH FIRST</span>
+            <h3>Follow the Video Guide</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/F3BgQk5FiBo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>If you get stuck, watch the video above to see exactly where to paste these codes.</p>
+        </div>
+
+        <div class="instruction-step">
+            <span class="step-badge">STEP 1</span>
+            <h3>Enable Inspect Element</h3>
+            <p>On mobile, you can't right-click. Follow these steps:</p>
+            <ol style="font-size: 14px; color: #ccc; padding-left: 20px;">
+                <li>Copy the code below.</li>
+                <li>Go to the Dino Game tab.</li>
+                <li>Tap the address bar, type <b>javascript:</b> and then paste the code immediately after it.</li>
+                <li>Press Enter/Go. A blue button will appear at the bottom.</li>
+            </ol>
+            <div class="code-container">
+                <code id="erudaCode">javascript:( () => {var script = document.createElement('script'); script.src = "https://cdn.jsdelivr.net/npm/eruda"; document.body.appendChild(script); script.onload = (() => eruda.init());})();</code>
+                <button class="copy-btn" onclick="fallbackCopy('erudaCode')">COPY STEP 1 CODE</button>
+            </div>
+        </div>
+
+        <div class="instruction-step">
+            <span class="step-badge">STEP 2</span>
+            <h3>Apply Immortal Hack</h3>
+            <p>Once the blue "Eruda" icon appears on your screen:</p>
+            <ol style="font-size: 14px; color: #ccc; padding-left: 20px;">
+                <li>Tap the blue icon to open the console.</li>
+                <li>Click the <b>"Console"</b> tab.</li>
+                <li>Copy and paste the code below into the box and press <b>Enter</b>.</li>
+            </ol>
+            <div class="code-container">
+                <code id="hackCode">Runner.instance_.gameOver = function(){};</code>
+                <button class="copy-btn" onclick="fallbackCopy('hackCode')">COPY STEP 2 CODE</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function fallbackCopy(id) {
+            const text = document.getElementById(id).innerText;
+            
+            // Create a temporary textarea to handle copy on all browsers
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            textArea.setSelectionRange(0, 99999); // For mobile
+            
+            try {
+                document.execCommand('copy');
+                alert("Code Copied Successfully!");
+            } catch (err) {
+                alert("Oops, unable to copy. Please long-press the code to copy manually.");
+            }
+            
+            document.body.removeChild(textArea);
+        }
+    </script>
+
+</body>
+</html>    <script>
+        function fallbackCopy(id) {
+            const text = document.getElementById(id).innerText;
+            
+            // Create a temporary textarea to handle copy on all browsers
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            textArea.setSelectionRange(0, 99999); // For mobile
+            
+            try {
+                document.execCommand('copy');
+                alert("Code Copied Successfully!");
+            } catch (err) {
+                alert("Oops, unable to copy. Please long-press the code to copy manually.");
+            }
+            
+            document.body.removeChild(textArea);
+        }
+    </script>
+
+</body>
+</html>
